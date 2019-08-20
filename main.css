@@ -1026,12 +1026,21 @@ button.btn {
     color: #2196b4;
     text-transform: uppercase;
     display: flex; }
+    .header-main__menu::before {
+      content: '';
+      width: 20px;
+      height: 19px;
+      position: absolute;
+      top: 3px;
+      left: 75px;
+      cursor: pointer; }
   .header-main__menu-wrapper {
     position: relative; }
   .header-main__right {
     display: flex;
     justify-content: center; }
   .header-main__button-wrapper {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center; }
@@ -1040,23 +1049,32 @@ button.btn {
     flex-direction: column;
     width: 50px;
     margin-left: 15px;
+    white-space: nowrap;
     cursor: pointer; }
     .header-main__elements span + span {
       margin-top: 6px; }
     .header-main__elements span {
       display: inline-block;
       height: 1px;
-      background-color: #2196b4; }
+      background-color: #2196b4;
+      transition: all .3s ease; }
       .header-main__elements span:nth-of-type(1) {
         width: 100%; }
       .header-main__elements span:nth-of-type(2) {
         width: 85%; }
       .header-main__elements span:nth-of-type(3) {
         width: 70%; }
+  .header-main__elements.active span:nth-of-type(3) {
+    width: 100%; }
+  .header-main__elements.active span:nth-of-type(2) {
+    width: 85%; }
+  .header-main__elements.active span:nth-of-type(1) {
+    width: 70%; }
   .header-main__contacts {
     display: flex;
     flex-direction: column; }
     .header-main__contacts a {
+      text-align: right;
       color: #2196b4;
       text-transform: uppercase; }
   .header-main__btn {
@@ -1078,12 +1096,21 @@ button.btn {
   text-transform: uppercase;
   flex-direction: column;
   left: 95px;
-  top: 40px;
+  top: 55px;
   transition: all .3s ease; }
   .dropdown a + a {
     margin-top: 25px; }
-  .dropdown a:hover {
-    color: #1f859e; }
+  .dropdown a {
+    transition: all .3s ease; }
+    .dropdown a:hover {
+      color: #1f859e; }
+  .dropdown__element {
+    white-space: nowrap; }
+
+.dropdown.active a {
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(0, -10px); }
 
 /*HEADER*/
 .header {
@@ -1196,6 +1223,23 @@ button.btn {
 
 .header.header--index {
   background-color: transparent; }
+
+.title-architecture {
+  text-transform: uppercase; }
+
+.header--absolute {
+  position: absolute;
+  left: 17%;
+  top: 45px; }
+
+.header-main__menu--color,
+.dropdown--color,
+.header-main__elements--color {
+  color: #1d345c; }
+  .header-main__menu--color span,
+  .dropdown--color span,
+  .header-main__elements--color span {
+    background-color: #1d345c; }
 
 /*HEADER*/
 .header {
