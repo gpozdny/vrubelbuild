@@ -1101,7 +1101,7 @@ button.btn {
   .dropdown a + a {
     margin-top: 25px; }
   .dropdown a {
-    transition: all .2s ease; }
+    transition: all .1s ease; }
     .dropdown a:hover {
       color: #1f859e; }
   .dropdown__element {
