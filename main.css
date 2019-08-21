@@ -917,6 +917,10 @@ button.btn {
   border-style: solid;
   background-color: #2196b4; }
 
+.btn-white {
+  background-color: #fff !important;
+  color: #000; }
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -1034,6 +1038,8 @@ button.btn {
       top: 3px;
       left: 75px;
       cursor: pointer; }
+  .header-main__menu.white {
+    color: white; }
   .header-main__menu-wrapper {
     position: relative; }
   .header-main__right {
@@ -1070,13 +1076,18 @@ button.btn {
     width: 85%; }
   .header-main__elements.active span:nth-of-type(1) {
     width: 70%; }
+  .header-main__elements.white span {
+    background-color: #fff; }
   .header-main__contacts {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    justify-content: center; }
     .header-main__contacts a {
       text-align: right;
       color: #2196b4;
       text-transform: uppercase; }
+  .header-main__contacts.white a {
+    color: #ffffff; }
   .header-main__btn {
     background-color: #2196b4;
     font-size: 20px;
@@ -1111,6 +1122,9 @@ button.btn {
   opacity: 0;
   pointer-events: none;
   transform: translate(0, -15px); }
+
+.dropdown.white a {
+  color: white; }
 
 /*HEADER*/
 .header {
@@ -1348,6 +1362,62 @@ button.btn {
   background-size: cover;
   width: 100%;
   height: 100%; }
+
+/*SLIDER PAGE*/
+.wrapper--slider {
+  background-image: none; }
+  .wrapper--slider:before, .wrapper--slider:after {
+    content: none; }
+
+.slider-page {
+  background: #179eaf;
+  width: 100%;
+  margin-bottom: 45px; }
+
+.slider-page img {
+  width: 100%; }
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 15%;
+  z-index: 0; }
+
+.footer img {
+  width: 100%; }
+
+/*SLIDER HOME*/
+.logo-box {
+  width: 30%;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap; }
+
+.logo {
+  width: 50%;
+  margin: 0 auto; }
+
+.slider-home {
+  flex-direction: column;
+  background-color: #000;
+  background-image: url(src/assets/images/bg_3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%; }
+  .slider-home__logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    z-index: 8; }
+  .slider-home__descriptions p {
+    font-size: 24px;
+    color: white;
+    text-transform: uppercase; }
 
 body {
   font-family: 'ttdrugs-regular';
