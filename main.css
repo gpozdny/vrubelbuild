@@ -1097,11 +1097,11 @@ button.btn {
   flex-direction: column;
   left: 95px;
   top: 55px;
-  transition: all .3s ease; }
+  transition: all .2s ease; }
   .dropdown a + a {
     margin-top: 25px; }
   .dropdown a {
-    transition: all .3s ease; }
+    transition: all .2s ease; }
     .dropdown a:hover {
       color: #1f859e; }
   .dropdown__element {
@@ -1110,7 +1110,7 @@ button.btn {
 .dropdown.active a {
   opacity: 0;
   pointer-events: none;
-  transform: translate(0, -10px); }
+  transform: translate(0, -15px); }
 
 /*HEADER*/
 .header {
