@@ -1593,9 +1593,9 @@ button.btn {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding-left: 10%;
+  padding-left: 17%;
   padding-right: 60px;
-  padding-top: 50px;
+  padding-top: 40px;
   z-index: 9; }
   .header-main__menu {
     font-size: 14px;
@@ -1607,8 +1607,8 @@ button.btn {
       width: 20px;
       height: 19px;
       position: absolute;
-      top: 3px;
-      left: 75px;
+      top: 0px;
+      left: 44px;
       cursor: pointer; }
   .header-main__menu.white {
     color: white; }
@@ -1973,9 +1973,6 @@ button.btn {
 
 .slider-home {
   flex-direction: column;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   width: 100%;
   height: 100%; }
   .slider-home__logo-wrapper {
@@ -1984,10 +1981,12 @@ button.btn {
     align-content: center;
     align-items: center;
     z-index: 8; }
-  .slider-home__descriptions p {
-    font-size: 24px;
-    color: white;
-    text-transform: uppercase; }
+  .slider-home__descriptions {
+    z-index: 999; }
+    .slider-home__descriptions p {
+      font-size: 24px;
+      color: white;
+      text-transform: uppercase; }
 
 .slider {
   position: absolute;
